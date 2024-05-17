@@ -17,8 +17,9 @@ const NavBar = () => {
          <img src={logo} alt="Logo" />              
         <nav ref={navRef}>
             <a href="/#">Home</a>
-            <a href="/#">About Us</a>
-            <a href="/#">Sign In</a>
+            <a href="/aboutus">About Us</a>
+            <a href="/signin">Sign In</a>
+            
             <button className="nav-btn nav-close-btn" onClick={showNavbar}> 
                 <FaTimes/>
             </button>
