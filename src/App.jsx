@@ -1,11 +1,13 @@
-import Navbar from './Navbar/NavBar'
+import Header from './Header/Header';
 import Content from './Content/Content';
+import { Outlet } from 'react-router-dom';
 
 
 const App = () => {
   return (
  <>
-    <Navbar/>
+    <Header/>
+    <Outlet/>
     <Content/>
     </>
   )

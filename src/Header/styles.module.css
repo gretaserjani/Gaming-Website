@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Titillium Web');
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree');
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bai+Jamjuree');
 
 *{
     /* padding: 0; */
     box-sizing: border-box;
     border-radius: 20px;
-    font-family: "Bai Jamjuree", sans-serif;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 .button {
@@ -21,8 +19,6 @@
         background: #37ffc6;
         border-radius: 18px;
         display: inline-grid;
-        font-family: "Bai Jamjuree", sans-serif;
-
 
 }
 
@@ -38,39 +34,6 @@
     background-color: rgb(0, 0, 0);
 }
 
-container h1 {
-    /* margin-right: 65px; */
-    margin-bottom: auto;
-    font-size: 100px;
-    margin-top: 100px;
-    color: white;
-    font-family: "Bai Jamjuree", sans-serif;
-    margin-bottom: -25px;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-}
-
-.second-line {
-    color: white;
-    font-size: 110px;
-    font-family: "Bai Jamjuree", sans-serif;
-    color: #37ffc6;
-    font-family: "Anton", sans-serif;
-    padding-top: 20px;
-}
-
-.cat {
-    align-items: end;
-}
-
-container div {
-    color: white;
-    font-family: "Bai Jamjuree", sans-serif;
-    font-size: 20px;
-    margin-top: 20px;
-
-}
 
 header {
     display: flex;
@@ -143,12 +106,4 @@ header .nav-btn{
     nav a {
         font-size: 1.5rem;
     }
-}
-
-.about-us {
-    color: white;
-}
-
-.sign-in {
-    color: white;
 }

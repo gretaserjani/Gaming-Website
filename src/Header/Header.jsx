@@ -2,13 +2,16 @@ import { useRef } from "react"
 import { FaBars, FaTimes } from "react-icons/fa"
 import "../Styles/main.css"
 import logo from '../Images/logo.png';
+import { useNavigate } from "react-router-dom";
 
-const NavBar = () => {
+const Header = () => {
     const navRef = useRef();
 
     const showNavbar = () => {
         navRef.current.ClassList.toggle("responsive_nav")
     }
+
+    const navigate = useNavigate();
 
     
 
@@ -18,7 +21,7 @@ const NavBar = () => {
         <nav ref={navRef}>
             <a href="/#">Home</a>
             <a href="/aboutus">About Us</a>
-            <a href="/signin">Sign In</a>
+            <a href="/signin" onClick={() => navigate(`/signin}`)}>Sign In</a>
             
             <button className="nav-btn nav-close-btn" onClick={showNavbar}> 
                 <FaTimes/>
@@ -32,4 +35,4 @@ const NavBar = () => {
   )
 }
 
-export default NavBar
+export default Header;
