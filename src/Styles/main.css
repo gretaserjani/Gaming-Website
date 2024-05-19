@@ -130,15 +130,17 @@ header .nav-btn{
     }
 
 
+
+
     header .responsive_nav{
         transform: none;
     }
 
-    nav .nav-close-btn {
+    /* nav .nav-close-btn {
         position: absolute;
         top: 2rem;
         right: 2rem;
-    }
+    } */
 
     nav a {
         font-size: 1.5rem;
@@ -152,3 +154,15 @@ header .nav-btn{
 .sign-in {
     color: white;
 }
+
+/* 
+.menu {
+    display: none; /* Hide the menu by default */
+   */
+  
+  .menu.open {
+    display: block; /* Display the menu when the 'open' class is present */
+    font-size: 100px;
+    color: white;
+  }
+  

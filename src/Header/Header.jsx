@@ -1,38 +1,38 @@
-import { useRef } from "react"
-import { FaBars, FaTimes } from "react-icons/fa"
-import "../Styles/main.css"
-import logo from '../Images/logo.png';
+import React, { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import "../Styles/main.css";
 import { useNavigate } from "react-router-dom";
+import logo from "../Images/logo.png";
+
+
+
 
 const Header = () => {
-    const navRef = useRef();
+  const navigate = useNavigate();
+  
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const showNavbar = () => {
-        navRef.current.ClassList.toggle("responsive_nav")
-    }
-
-    const navigate = useNavigate();
-
-    
+ 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+    console.log("Menu Open:", isMenuOpen); 
+  };
 
   return (
     <header>
-         <img src={logo} alt="Logo" />              
-        <nav ref={navRef}>
-            <a href="/#">Home</a>
-            <a href="/aboutus">About Us</a>
-            <a href="/signin" onClick={() => navigate(`/signin}`)}>Sign In</a>
-            
-            <button className="nav-btn nav-close-btn" onClick={showNavbar}> 
-                <FaTimes/>
-            </button>
-            <button className="button"> Explore Games</button>
-        </nav>
-        <button className="nav-btn" onClick={showNavbar}>
-            <FaBars/>
-        </button>
+      <img src={logo} alt="Logo" />
+      <button className="nav-btn" onClick={toggleMenu}>
+        {isMenuOpen ? <FaTimes /> : <FaBars />}
+      </button>
+
+      <nav className={isMenuOpen ? "menu open" : "menu"}>
+        <a href="/#">Home</a>
+        <a href="/aboutus">About Us</a>
+        <a href="/signin">Sign In</a>
+        <button className="button" onClick={() => navigate(`/games`)}>Explore Games</button>
+      </nav>
     </header>
-  )
-}
+  );
+};
 
 export default Header;
