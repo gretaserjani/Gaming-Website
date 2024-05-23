@@ -1,0 +1,55 @@
+
+/* TwoColumnSection.css */
+.two-column-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+  }
+  
+  .text-column {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .image-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .title {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #fff; /* White text color */
+  }
+  
+  .description {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #ddd; /* Light gray text color */
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #00ffaa;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cta-button:hover {
+    background-color: #ff6347;
+  }
+  
+  .image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
