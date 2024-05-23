@@ -1,5 +1,5 @@
 import "../Styles/main.css"
-// import homepage from '../Images/homepage.png';
+// import homepagepic from '../Images/homepagepic.png';
 
 
 const Content = () => {
@@ -9,7 +9,7 @@ const Content = () => {
         <span className="second-line">OF ADVENTURE</span>
         <div>Unlock the Next Level of Fun! Dive into a world of excitement <br></br> and adventure with our 
             thrilling gaming website. <br></br> Play, compete, and conquer today!</div>
-        {/* <img className="cat" src={homepage} /> */}
+        {/* <img className="homepage" src={homepagepic} /> */}
         
         
     </container>

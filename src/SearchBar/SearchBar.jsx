@@ -1,26 +1,40 @@
 import React, { useState } from 'react';
+import './SearchBar.css'
+import { FaSearch } from 'react-icons/fa';
 
-const SearchBar = () => {
 
-    const [query, setQuery] = useState("")
+const SearchBar = ({setResults}) => {
 
-    function search(e){
-        e.preventDefault()
-        setQuery(e.target.value)
+    const [input, setInput] = useState("")
+
+    const fetchData = (value) => {
+        fetch(`https://api.rawg.io/api/platforms?key=${'dc0bd1d35e8047cb974d8c9c9de4d519'}`)
+        .then((response) => response.json())
+        .then((json) => {
+            // console.log(json)
+            const results = json.filter((game) => {
+             return game && game.name && game.name.toLowerCase().includes(value)
+            })
+            setResults(results)
+        })
+
     }
 
-    return (
-        <div className="w-full max-w-xl flex mx-auto p-20 text-xl">
-            <input
-                type="text"
-                className="w-full placeholder-gray-400 text-gray-900 p-4"
-                placeholder="Search"
-                onChange={search}
-                value={query}
-            />
-            <button className="bg-white p-4">🔍</button>
-        </div>
-    );
+    const handleChange = (value) => {
+          setInput(value)
+          fetchData(value)
+    }
+
+    
+return (<>
+    <div className='input-wrapper'>
+    <FaSearch id='search-icon'></FaSearch>
+    <input placeholder='Type to search' 
+    value={input} 
+    onChange={(e) => handleChange(e.target.value)}></input>
+    </div>
+    </>
+)
 };
 
 export default SearchBar;
