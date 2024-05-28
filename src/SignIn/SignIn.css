@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium Web');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bai+Jamjuree');
+
+.signin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 210vh;
+    background-color: #000; 
+  }
+  
+  .signin-form {
+    background-color: #222; 
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 400px; 
+  }
+  
+  .signin-title {
+    color: #37ffc6; 
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .input-container {
+    margin-bottom: 20px;
+  }
+  
+  .signin-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333; 
+    color: #37ffc6; 
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 255, 0, 0.1); 
+  }
+  
+  .signin-input::placeholder {
+    color: #37ffc6; 
+  }
+  
+  .signin-button {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #37ffc6; 
+    color: white; 
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signin-button:hover {
+    background-color: white; 
+    box-shadow: 0 4px 8px rgba(13, 229, 236, 0.3); 
+    color: black;
+  }
+  .error-message{
+    color: white;
+  }

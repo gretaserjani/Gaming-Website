@@ -4,21 +4,21 @@ import {
     createBrowserRouter,
     RouterProvider,
   } from "react-router-dom";
-import SignIn from './pages/SignIn.jsx';
 import AboutUs from './pages/AboutUs.jsx';
 import GamesListView from './pages/GamesListView.jsx';
 import SingleGameView from './pages/SingleGameView.jsx';
+import SignIn from './SignIn/SignIn.jsx';
 
 const router = createBrowserRouter([
     {
       path: "/",
       element: <App />,
-      children: [
-        {
-            path: "/games",
-            element: <GamesListView/>,
-          },
-      ]
+      // children: [
+      //   {
+      //       path: "/games",
+      //       element: <GamesListView/>,
+      //     },
+      // ]
     },
     {
       path: "/games/:gamesId",
@@ -32,6 +32,11 @@ const router = createBrowserRouter([
             path: "/aboutus",
             element: <AboutUs/>,
     },
+    {
+      path: "/games",
+      element: <GamesListView/>,
+    },
+
 
   ]);
 

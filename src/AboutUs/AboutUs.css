@@ -22,7 +22,7 @@
   }
   
   .title {
-    font-size: 2em;
+    font-size: 100px;
     margin-bottom: 10px;
     color: #fff; /* White text color */
   }
@@ -44,12 +44,22 @@
   }
   
   .cta-button:hover {
-    background-color: #ff6347;
+    background-color: white;
+    color: black;
+
   }
-  
+
   .image {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
   }
   
+
+  .second-line {
+    color: white;
+    font-size: 100px;
+    font-family: "Bai Jamjuree", sans-serif;
+    color: #37ffc6;
+    font-family: "Anton", sans-serif;
+  }
