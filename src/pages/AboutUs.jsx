@@ -1,11 +1,15 @@
 import React from 'react'
 import Header from '../Header/Header'
+import TwoColumnSection from '../AboutUs/AboutUsPage'
+ 
+
 
 const AboutUs = () => {
   return (
     <>
     <Header/>
-    <div className='about-us'>AboutUs</div>
+    <TwoColumnSection />
+   
     </>
   )
 }
