@@ -28,6 +28,8 @@ const Header = () => {
       <nav className={isMenuOpen ? "menu open" : "menu"}>
         <a href="/#">Home</a>
         <a href="/aboutus">About Us</a>
+        <a href="/categories">Categories</a> 
+
         <a href="/signin">Sign In</a>
         <button className={styles.button} onClick={() => navigate(`/games`)}>Explore Games</button>
       </nav>

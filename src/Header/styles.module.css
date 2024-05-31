@@ -30,8 +30,7 @@
 
 :root{
     margin-top: 30px;
-    margin-left: 80px;
-    justify-content: center;
+     justify-content: center;
     --mainColor: #2c353ac0;
     --mainColorLight: rgb(187, 0, 187);
     --secondaryColor: #3AAA9B;

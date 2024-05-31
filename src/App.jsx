@@ -5,7 +5,7 @@ import Footer from './Footer/Footer';
 import SearchBar from './SearchBar/SearchBar';
 import SearchResultsList from './SearchResultsList/SearchResultsList';
 import { useState } from 'react';
-
+ 
 const App = () => {
 
    const [results, setResults] = useState([])
@@ -18,6 +18,8 @@ console.log(results)
     <Content/>
     <SearchBar setResults={setResults}/>
     <SearchResultsList results={results}/>
+    
+    
     <Footer/> 
     </>
   )
