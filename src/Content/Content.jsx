@@ -19,7 +19,17 @@ const Content = () => {
   // )
 
   return (
-    <div className="two-column-section">
+ 
+      <div className="background-video-container">
+        <video
+          src="https://simplio.io/images/home/simplio-intro-vid.mp4"
+          loop
+          autoPlay
+          muted
+          playsInline
+          className="background-video"></video>
+     <div className="two-column-section">
+ 
       <div className="text-column">
         <h1 className="title">Discover a world</h1>
         <span className="second-line">OF ADVENTURE</span>
@@ -30,6 +40,7 @@ const Content = () => {
       <div className="image-column">
         <img src={homepagepic} alt="Gaming" className="image" />
       </div>
+    </div>
     </div>
   );
 }

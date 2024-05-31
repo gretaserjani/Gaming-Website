@@ -7,6 +7,7 @@ import {
 import AboutUs from './pages/AboutUs.jsx';
 import GamesListView from './pages/GamesListView.jsx';
 import SingleGameView from './pages/SingleGameView.jsx';
+import Categories from './pages/Categorie.jsx'
 import SignIn from './SignIn/SignIn.jsx';
 
 const router = createBrowserRouter([
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
     {
             path: "/aboutus",
             element: <AboutUs/>,
+    },
+    {
+      path: "/categories",
+      element: <Categories/>,
     },
     {
       path: "/games",
