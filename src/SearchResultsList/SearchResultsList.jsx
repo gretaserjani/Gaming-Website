@@ -4,7 +4,7 @@ import './SearchResultsList.css';
 const SearchResultsList = ({ results }) => {
   return (
     <div className='results-list'>
-      {results.map((result, id) => {
+      {results?.map((result, id) => {
         return <SearchResultsList result={result} key={id}/>;
       })}
     </div>

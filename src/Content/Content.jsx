@@ -5,17 +5,33 @@ import '../Content/Content.css';
 
 
 const Content = () => {
+  // return (
+  //   <>
+  //   <img className="image" src={homepagepic} />
+  //   <container>
+  //       <h1>Discover a world</h1>
+  //       <span className="second-line">OF ADVENTURE</span>
+  //       <div>Unlock the Next Level of Fun! Dive into a world of excitement <br></br> and adventure with our 
+  //           thrilling gaming website. <br></br> Play, compete, and conquer today!</div>
+  //   </container>
+
+  //   </>
+  // )
+
   return (
-    <>
-    <container>
-        <h1>Discover a world</h1>
+    <div className="two-column-section">
+      <div className="text-column">
+        <h1 className="title">Discover a world</h1>
         <span className="second-line">OF ADVENTURE</span>
-        <div>Unlock the Next Level of Fun! Dive into a world of excitement <br></br> and adventure with our 
-            thrilling gaming website. <br></br> Play, compete, and conquer today!</div>
-    </container>
-    <img className="image" src={homepagepic} />
-    </>
-  )
+        <p className="description"> 
+        Unlock the Next Level of Fun! Dive into a world of excitement <br></br> and adventure with our thrilling gaming website. <br></br> Play, compete, and conquer today!
+        </p>
+      </div>
+      <div className="image-column">
+        <img src={homepagepic} alt="Gaming" className="image" />
+      </div>
+    </div>
+  );
 }
 
 export default Content;

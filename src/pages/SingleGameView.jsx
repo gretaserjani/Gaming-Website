@@ -12,16 +12,16 @@ const SingleGameView = () => {
 
   useEffect(() => {
     const getSingleGame = async () => {
-      const game = await fetchSingleGame(characterId);
+      const games = await fetchSingleGame(characterId);
 
-      setSingleGame(game);
+      setSingleGame(games);
     };
 
     if (!singleGame) {
       getSingleGame();
     }
   }, [characterId, singleGame]);
-
+console.log(singleGame);
   return (
     <div>
         <Header/>

@@ -1,6 +1,6 @@
 
 /* TwoColumnSection.css */
-.two-column-section {
+.twocolumnsection {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -9,12 +9,12 @@
     color: #fff; /* White text color */
   }
   
-  .text-column {
+  .textcolumn {
     flex: 1;
     padding: 20px;
   }
   
-  .image-column {
+  .imagecolumn {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -33,7 +33,7 @@
     color: #ddd; /* Light gray text color */
   }
   
-  .cta-button {
+  .ctabutton {
     padding: 10px 20px;
     font-size: 1em;
     background-color: #00ffaa;
@@ -43,7 +43,7 @@
     cursor: pointer;
   }
   
-  .cta-button:hover {
+  .ctabutton:hover {
     background-color: white;
     color: black;
 
@@ -56,10 +56,15 @@
   }
   
 
-  .second-line {
+  .secondline {
     color: white;
     font-size: 100px;
     font-family: "Bai Jamjuree", sans-serif;
     color: #37ffc6;
     font-family: "Anton", sans-serif;
+  }
+
+
+  span {
+    margin-top: 30px;
   }

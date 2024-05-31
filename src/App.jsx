@@ -9,7 +9,7 @@ import { useState } from 'react';
 const App = () => {
 
    const [results, setResults] = useState([])
-
+console.log(results)
 
      return (
  <>

@@ -3,7 +3,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import "../Styles/main.css";
 import { useNavigate } from "react-router-dom";
 import logo from "../Images/logo.png";
-
+import styles from './styles.module.css';
 
 
 
@@ -29,7 +29,7 @@ const Header = () => {
         <a href="/#">Home</a>
         <a href="/aboutus">About Us</a>
         <a href="/signin">Sign In</a>
-        <button className="button" onClick={() => navigate(`/games`)}>Explore Games</button>
+        <button className={styles.button} onClick={() => navigate(`/games`)}>Explore Games</button>
       </nav>
     </header>
   );

@@ -9,6 +9,22 @@
     color: white;
   }
 
+
+  .button {
+    width: 10%;
+    margin-bottom: 30px;
+    color: black;
+    background-color: #37ffc6;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.button:hover {
+  color: white;
+  background-color: black;
+  font-family: 'Titillium Web', sans-serif;
+  cursor: pointer;
+}
+
   
 
  

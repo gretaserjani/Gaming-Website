@@ -6,6 +6,8 @@ import Button from '@mui/material/Button';
 import PropTypes from 'prop-types';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useState } from 'react';
+import styles from './styles.module.css';
+
 
 const GameCard = ({gameDetails}) => {
   const [showMoreInfo, setShowMoreInfo] = useState(false);
@@ -24,12 +26,13 @@ const GameCard = ({gameDetails}) => {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          {gameDetails?.name}
+          Name- {gameDetails?.name} <br></br>
+          Slug- {gameDetails?.slug}
         </Typography>
         {
           !characterId ? (
             <Button 
-              variant="contained"
+              className= {styles.button}
               onClick={() => navigate(`/games/${gameDetails.id}`)}
             >
               View more
@@ -37,7 +40,7 @@ const GameCard = ({gameDetails}) => {
           ) : (
             <div>
                 <Button 
-                variant="outlined"
+                variant='contained'
                 onClick={() => setShowMoreInfo(!showMoreInfo)}
               >
                 {buttonLabel}
@@ -56,7 +59,7 @@ const GameCard = ({gameDetails}) => {
           showMoreInfo && (
             <div>
               <h3>Name: {gameDetails?.name}</h3>
-              <h3>Added: {gameDetails?.added}</h3>
+              <h3>Added: {gameDetails?.slug}</h3>
             </div>
           )
         }

@@ -21,6 +21,12 @@
         display: inline-grid;
 }
 
+.button:hover {
+    cursor: pointer;
+    color: black;
+    background-color: white;
+}
+
 
 :root{
     margin-top: 30px;

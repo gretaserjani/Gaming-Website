@@ -3,8 +3,14 @@ import { useState } from 'react';
 import Header from '../Header/Header';
 
 const SignIn = () => {
-  const [username, setUsername] = useState('');
+  const [fullname, setFullName] = useState('');
   const [password, setPassword] = useState('');
+  const [email, setEmail] = useState('');
+  const [age, setAge] = useState('');
+  const [username, setUsername] = useState('');
+
+
+
   const [error, setError] = useState('');
 
   const handleSubmit = (e) => {
@@ -26,7 +32,7 @@ const SignIn = () => {
       return;
     }
 
-    if (username === 'exampleuser' && password === 'password123') {
+    if (fullName === 'exampleuser' && password === 'password123') {
       // You can perform actions like redirecting or displaying a success message here.
       console.log('Sign in successful');
     } else {
@@ -42,21 +48,48 @@ const SignIn = () => {
         <h1 className="signin-title">Sign In</h1>
         {error && <p className="error-message">{error}</p>}
         <form onSubmit={handleSubmit}>
+        <div className="input-container">
+            <input
+              type="text"
+              placeholder="Full Name"
+              value={fullname}
+              onChange={(e) => setFullName(e.target.value)}
+              className="signin-input"
+            />
+            </div>
           <div className="input-container">
             <input
               type="text"
-              placeholder="Username"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               className="signin-input"
             />
-          </div>
+            </div>
+            <div className="input-container">
+            <input
+              type="number"
+              placeholder="Age"
+              value={age}
+              onChange={(e) => setAge(e.target.value)}
+              className="signin-input"
+            />
+            </div>
           <div className="input-container">
             <input
               type="password"
               placeholder="Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
+              className="signin-input"
+            />
+          </div>
+          <div className="input-container">
+            <input
+              type="text"
+              placeholder="Username"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
               className="signin-input"
             />
           </div>
